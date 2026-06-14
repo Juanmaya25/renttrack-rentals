@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Gestión integral de propiedades en arriendo — pagos, mantenimiento y reportes financieros del portafolio.",
-  "author": "Juan José Maya (devMaya) <juanjosemorales2510@gmail.com>",
+  "author": "Juan José Maya (devMaya) <juanjosemaya2510@gmail.com>",
   "license": "MIT",
   "homepage": "https://juanmaya25.github.io/renttrack-rentals",
   "repository": {
@@ -14,14 +14,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.1",
     "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.4.8"
+    "jsdom": "^25.0.1",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.3"
   }
 }

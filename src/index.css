@@ -13,3 +13,8 @@ input, select, textarea { font-family: inherit; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(56, 189, 248, .5); }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 .fade-in { animation: fadeIn .25s ease-out; }
+.rt-cols-main { grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr); }
+.rt-cols-half { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+@media (max-width: 880px) {
+  .rt-cols-main, .rt-cols-half { grid-template-columns: minmax(0, 1fr); }
+}
